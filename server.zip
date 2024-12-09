@@ -1,0 +1,15 @@
+<?php
+// Define the URL
+$url = 'http://65.109.69.35/~vipapixy/rnfmods/server.php?nid=1515482238&dob=2002-01-01';
+
+// Make the GET request
+$response = file_get_contents($url);
+
+// Check if the request was successful
+if ($response !== false) {
+    // Output the response
+    echo $response;
+} else {
+    echo 'Request failed.';
+}
+?>
